@@ -1,0 +1,202 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import './index.css';
+// import App from './App';
+// import reportWebVitals from './reportWebVitals';
+
+// ReactDOM.render(
+//   <h1>HEllo</h1>
+// );
+
+// reportWebVitals();
+
+
+
+//var React = require('react');
+import React from 'react';
+//var ReactDOM = require('react-dom');
+import ReactDOM from 'react-dom';
+
+
+var x = "Dojo";
+
+ReactDOM.render(
+    //1st
+
+    // <div>
+    //     <h1>Hello</h1>
+    //     <h2>hI</h2>
+    //     <p>Hi now I'm learning React.Next I will learn django</p>
+    // </div>
+
+
+    //2nd  
+
+    // [
+    //     <h1>Hello</h1>,
+    //     <h2>hI</h2>,
+    //     <p>Hi now I'm learning React.Next I will learn django</p>
+    // ]
+    
+    //3rd best,use it only,only one <div> is made
+ 
+    // <React.Fragment>
+    //     <h1>Hello</h1>
+    //      <h2>hI</h2>
+    //     <p>Hi now I'm learning React.Next I will learn django</p>
+    // </React.Fragment>
+    
+    //4th best,use it only, only one <div> is made
+
+
+    //{only expressions no statements}
+    <>
+        <h1>Hello {x}</h1>
+         <h2>hI {2+3}</h2>
+        <p>Hi now I'm learning React.Next I will learn django</p>
+    </>
+
+    ,
+    document.getElementById('root')); 
+    import React from 'react';
+import ReactDOM from 'react-dom';
+import "./index.css";
+
+var x = "Ninja Hattori";
+var d = new Date().toLocaleDateString();
+ReactDOM.render(
+    <>
+        <h1 class="heading">I'm {x}</h1>
+        <h2 class="heading">Today's date is {d} </h2>
+        <h1 style=""></h1>
+    </>,
+    document.getElementById("root"));
+
+
+
+
+
+
+
+
+
+
+//new code
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+var time = new Date().getHours(2020,5,5,14);
+var x;
+var css= {      };
+if(time >=1 && time<=11)
+{
+    x="Good Morning";
+    css.color = "pink";
+}
+else if(time>=12 && time<=19)
+{
+    x="Good Afternoon";
+    css.color = "yellow";
+}
+else
+{
+    x="Good Night";
+    css.color = "green";
+}
+ReactDOM.render(
+    
+    ,
+    document.getElementById("root")
+);
+
+
+
+
+
+
+
+
+
+//important
+    To create a component make a jsx file with any name and in that file we create a function of same name as of the file.
+    And export the component with default in the last.
+    In index.js write at top:
+    import <Component name> from './<Component name>';
+
+
+    //in a Component
+
+
+    import .....
+
+    function Component name()
+    {
+        /*Java Script Code*/
+        return(
+            //JSX code
+        );
+    }
+
+    export default Component name;
+
+    // In general in a Component
+
+
+
+    /*members are variables,consts or functions
+    member1;
+    member2;
+    member3;
+    .....
+
+    export default member1;
+    export {member2,member3......};
+    
+
+
+    //now in index.js
+
+    import member1 , {member2} from './Component name'
+
+
+    //2nd method
+
+    import * as <any name let x> from './<Component name>'
+
+    //to access
+    //for default
+    {x.default}
+    //for others
+    {x.member2}
+    {x.member3}
+    ........
+
+
+
+//DIGITAL CLOCK
+
+
+
+function App() {
+    //js code here
+    let time = new Date().toLocaleTimeString();
+    const [t, sett] = useState(time);
+    const x = () => {
+        time = new Date().toLocaleTimeString();
+        sett(time);
+    }
+    setInterval(x, 1000);
+    return (
+        //jsx code
+        <>
+            <div>
+                <h1>{t}</h1>
+                {/* <button onClick={x}>Current Time</    button> */}
+            </div>
+        </>
+    );
+}
+
+
+
+//

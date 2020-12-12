@@ -1,0 +1,40 @@
+div {
+  width: 100%;
+  color: aqua;
+  height: 100vh;
+  background: rgb(109, 61, 109);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding: 12px 20px;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  text-shadow: 0 2px 2px black;
+}
+
+input {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 20px;
+  background: rgb(196, 76, 196);
+  color: white;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
