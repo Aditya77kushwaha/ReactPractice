@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import L from "./Login"
 
 function F(props) {
     const [name, changeName] = useState();
@@ -10,11 +11,12 @@ function F(props) {
         changeName(event.target.value);
 
     }
+    const f = () => {
+        alert("Done!!");
+    }
     return (
         <>
-            <h1>Hello {n}  😉</h1>
-            Name : <input type="text" placeholder="Enter name" value={name} onChange={y} /><br></br><hr></hr>
-            <button onClick={x}>Click 😊</button>
+            <L />
         </>
     );
 }

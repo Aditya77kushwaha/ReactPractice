@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Registration Form</h2>
+
+        <form action='/signup' method="post" entype='multipart/form-data' class='custom-form'>
+            <label>Username</label><br />
+            <input type='text'><br /><br />
+
+            <label>Email</label><br />
+            <input type='email'><br /><br />
+
+            <label><input type='radio' name='gender'> Female</label>
+            <label><input type='radio' name='gender'> Male</label>
+            <label><input type='radio' name='gender'> Others</label>
+
+            <br/>
+            <br/>
+            <label>Gender</label><br />
+            <select>
+                <option>Female</option>
+                <option>Male</option>
+            </select><br /><br />
+
+            <label>Upoload Image</label><br />
+            <input type="file"><br /><br />
+
+
+            <label>Skills</label><br /><br />
+            <label>Html <input type='checkbox'></label><br />
+            <label>Css <input type='checkbox'></label><br />
+            <label>Javascript <input type='checkbox'></label><br />
+            <label>Python <input type='checkbox'></label><br />
+            <br />
+            
+            <label>Profession </label><br />
+            <input list='profs'/> <br /><br />
+
+            <datalist id='profs'>
+                <option value='Engineer'></option>
+                <option value='Doctor'></option>
+                <option value='Loyer'></option>
+            </datalist>
+
+            <label>Password</label><br />
+            <input type='password'/><br /><br />
+
+            <label>Re-Enter Password</label><br />
+            <input type='password'/><br /><br />
+
+            <input type='submit'  class='sbtn'/>
+        </form>
+    </center>
+</body>
+</html>
